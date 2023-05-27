@@ -4,7 +4,7 @@ import { cyan } from '@mui/material/colors';
 export const LightTheme = createTheme({
   palette: {
     primary: {
-      main: '#015488',
+      main: '#F3A378',
       contrastText: '#fff',
     },
     secondary: {
@@ -14,13 +14,13 @@ export const LightTheme = createTheme({
       contrastText: '#fff',
     },
     background: {
-      paper: '#f7f6f3',
-      default: '#fff',
+      paper: '#FDC3AC',
+      default: '#FDC3AC',
     },
   },
   typography: {
     allVariants: {
-      color: '#015488',
+      color: '#1E1A15',
       fontFamily: 'Roboto'
     }
   }
