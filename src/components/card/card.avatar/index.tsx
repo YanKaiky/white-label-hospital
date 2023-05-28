@@ -21,8 +21,8 @@ export const CardAvatar: FC<ICardAvatarProps> = ({ image, title, subtitle }) => 
           color="text.secondary"
           textAlign='justify'
           sx={{
-            minHeight: '5rem',
-            maxHeight: '5rem',
+            minHeight: '9rem',
+            maxHeight: '9rem',
           }}
         >
           {subtitle}
