@@ -1,11 +1,41 @@
 import { IPFBody } from "../../layouts/IPFBody";
-import { Typography } from "@mui/material";
 import headerImage from "../../assets/direction.png";
+import { DirectionPerson } from "../../components/direction.person/direction.person";
 
 export const Direction = () => {
   return (
     <IPFBody image={headerImage}>
-      <Typography>Direction</Typography>
+      <DirectionPerson
+        job="Gerente - Técnica em Enermagem"
+        name="Carolinny Neves Moreira"
+        bgcolor="#00DDA1"
+      />
+
+      <DirectionPerson
+        image="https://pps.whatsapp.net/v/t61.24694-24/341056235_778344066865459_2316432112119543498_n.jpg?ccb=11-4&oh=01_AdQxXSb0hbrS6orrfGVVBnVM00ErZ9ybcdx9cePI3jAV_A&oe=647FF78A"
+        job="CEO - Técnica em Enermagem"
+        name="Eliza Beatriz Pires"
+      />
+
+      <DirectionPerson
+        job="Presidente - Técnica em Enermagem"
+        name="Ellen Franciene Chagas Ribeiro"
+        bgcolor="#FF4600"
+      />
+
+      <DirectionPerson
+        job="Diretora - Técnica em Enermagem"
+        name="Gicélia Maria Gonçalves Vieira"
+        bgcolor="#FF00C1"
+      />
+
+      <DirectionPerson
+        job="Analista Sênior - Técnica em Enermagem"
+        name="Miriam Prado Guarnieri"
+        bgcolor="#0097FF"
+      />
+
+
     </IPFBody>
   );
 };
