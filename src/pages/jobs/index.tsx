@@ -1,12 +1,18 @@
 import { IPFBody } from "../../layouts/IPFBody";
 import headerImage from "../../assets/jobs.jpg";
 import { Job } from "../../components/job/job";
-import { Divider, List } from "@mui/material";
+import { Box, Divider, List, Typography } from "@mui/material";
 
 export const Jobs = () => {
   return (
     <IPFBody image={headerImage}>
-      <List sx={{ marginBottom: '2rem' }}>
+      <Box paddingY={6} paddingX={8}>
+        <Typography variant="h5" sx={{ color: '#002C55' }}>
+          Vagas
+        </Typography>
+      </Box>
+
+      <List sx={{ marginBottom: '2rem', marginX: '3rem' }}>
         <Job
           url="https://www.linkedin.com/jobs/view/t%C3%A9cnico-em-enfermagem-at-hospital-azambuja-3611655470/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic&originalSubdomain=br"
           title="Técnico em Enfermagem"
@@ -26,7 +32,7 @@ export const Jobs = () => {
         <Divider />
 
         <Job
-          url="https://www.linkedin.com/jobs/collections/recommended/?currentJobId=3569016770"
+          url="https://www.linkedin.com/jobs/collections/recommended/?currentJobId=3602845511"
           title="Desenvolvedor FullStack JS"
           description="Necessários conhecimentos em ReactJS, NodeJS, TypeScript, DigitalOcean"
           location="Blumenua, SC"

@@ -66,9 +66,9 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
               variant="text"
               onClick={() => navigate('/home')}
               sx={{
-                color: location.pathname === '/home' ? '#D800BE' : '#00B65B',
+                color: location.pathname === '/home' ? '#A900F3' : '#00B65B',
                 ":hover": {
-                  color: '#D800BE'
+                  color: '#A900F3'
                 }
               }}
             >
@@ -79,9 +79,9 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
               variant="text"
               onClick={() => navigate('/hospital')}
               sx={{
-                color: location.pathname === '/hospital' ? '#D800BE' : '#00B65B',
+                color: location.pathname === '/hospital' ? '#A900F3' : '#00B65B',
                 ":hover": {
-                  color: '#D800BE'
+                  color: '#A900F3'
                 }
               }}
             >
@@ -92,9 +92,9 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
               variant="text"
               onClick={() => navigate('/direction')}
               sx={{
-                color: location.pathname === '/direction' ? '#D800BE' : '#00B65B',
+                color: location.pathname === '/direction' ? '#A900F3' : '#00B65B',
                 ":hover": {
-                  color: '#D800BE'
+                  color: '#A900F3'
                 }
               }}
             >
@@ -105,9 +105,9 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
               variant="text"
               onClick={() => navigate('/jobs')}
               sx={{
-                color: location.pathname === '/jobs' ? '#D800BE' : '#00B65B',
+                color: location.pathname === '/jobs' ? '#A900F3' : '#00B65B',
                 ":hover": {
-                  color: '#D800BE'
+                  color: '#A900F3'
                 }
               }}
             >
@@ -146,6 +146,7 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
             position: 'relative',
             zIndex: 1,
             color: 'white',
+            userSelect: 'none'
           }}
         >
           {
@@ -176,10 +177,10 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
             variant="text"
             onClick={() => navigate('/home')}
             sx={{
-              color: location.pathname === '/home' ? '#D800BE' : '#00B65B',
+              color: location.pathname === '/home' ? '#A900F3' : '#00B65B',
               background: '#fff',
               ":hover": {
-                color: '#D800BE'
+                color: '#A900F3'
               }
             }}
           >
@@ -190,10 +191,10 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
             variant="text"
             onClick={() => navigate('/hospital')}
             sx={{
-              color: location.pathname === '/hospital' ? '#D800BE' : '#00B65B',
+              color: location.pathname === '/hospital' ? '#A900F3' : '#00B65B',
               background: '#fff',
               ":hover": {
-                color: '#D800BE'
+                color: '#A900F3'
               }
             }}
           >
@@ -204,10 +205,10 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
             variant="text"
             onClick={() => navigate('/direction')}
             sx={{
-              color: location.pathname === '/direction' ? '#D800BE' : '#00B65B',
+              color: location.pathname === '/direction' ? '#A900F3' : '#00B65B',
               background: '#fff',
               ":hover": {
-                color: '#D800BE'
+                color: '#A900F3'
               }
             }}
           >
@@ -218,10 +219,10 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
             variant="text"
             onClick={() => navigate('/jobs')}
             sx={{
-              color: location.pathname === '/jobs' ? '#D800BE' : '#00B65B',
+              color: location.pathname === '/jobs' ? '#A900F3' : '#00B65B',
               background: '#fff',
               ":hover": {
-                color: '#D800BE'
+                color: '#A900F3'
               }
             }}
           >

@@ -15,7 +15,7 @@ export const DirectionPerson: FC<IDirectionPersonProps> = ({ image, job, name, b
   const xlDown = useMediaQuery(theme.breakpoints.down('xl'));
 
   return (
-    <Card sx={{ bgcolor: '#E9E9E9', padding: 3 }}>
+    <Card sx={{ bgcolor: '#E9E9E9', margin: 2 }}>
       <CardContent sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
         {image ? <Avatar
           alt={name}
