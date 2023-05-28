@@ -11,38 +11,41 @@ interface IDirectionPersonProps {
 export const DirectionPerson: FC<IDirectionPersonProps> = ({ image, job, name, bgcolor }) => {
   const theme = useTheme();
   const smDown = useMediaQuery(theme.breakpoints.down('sm'));
-  const mdDown = useMediaQuery(theme.breakpoints.down('md'));
   const lgDown = useMediaQuery(theme.breakpoints.down('lg'));
-  const xsDown = useMediaQuery(theme.breakpoints.down('xs'));
   const xlDown = useMediaQuery(theme.breakpoints.down('xl'));
 
   return (
     <Card sx={{ bgcolor: '#E9E9E9', padding: 3 }}>
-      <CardContent sx={{ display: 'flex', gap: 1 }}>
+      <CardContent sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
         {image ? <Avatar
           alt={name}
           src={image}
-          sx={{ width: 100, height: 100, bgcolor: bgcolor }}
+          sx={{
+            width: smDown ? 70 : 100,
+            height: smDown ? 70 : 100,
+            bgcolor: bgcolor
+          }}
         /> :
           <Avatar
             alt={name}
             src={image}
-            sx={{ width: 100, height: 100, color: 'white', bgcolor: bgcolor }}
+            sx={{
+              width: smDown ? 70 : 100,
+              height: smDown ? 70 : 100,
+              color: 'white',
+              bgcolor: bgcolor
+            }}
           >
             {name.split('')[0]}
           </Avatar>
         }
 
-        <Box>
+        <Box display='flex' flexDirection='column' alignItems='flex-start' justifyContent='center'>
           <Typography
             variant="h5"
             textAlign='justify'
             paddingBottom={1}
-            fontSize={(smDown && mdDown && lgDown && xlDown && !xsDown) ? 16 : undefined}
-            sx={{
-              minHeight: '3rem',
-              maxHeight: '6rem',
-            }}
+            fontSize={smDown ? 12 : xlDown && lgDown ? 20 : undefined}
           >
             {name}
           </Typography>
@@ -51,11 +54,7 @@ export const DirectionPerson: FC<IDirectionPersonProps> = ({ image, job, name, b
             variant="h5"
             color="text.secondary"
             textAlign='justify'
-            fontSize={(smDown && mdDown && lgDown && xlDown && !xsDown) ? 16 : undefined}
-            sx={{
-              minHeight: '3rem',
-              maxHeight: '6rem',
-            }}
+            fontSize={smDown ? 12 : xlDown && lgDown ? 18 : undefined}
           >
             {job}
           </Typography>

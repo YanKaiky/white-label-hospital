@@ -9,7 +9,7 @@ interface ICardAvatarProps {
 
 export const CardAvatar: FC<ICardAvatarProps> = ({ image, title, subtitle }) => {
   return (
-    <Card sx={{ width: '75%', bgcolor: '#E9E9E9' }}>
+    <Card sx={{ width: '100%', bgcolor: '#E9E9E9' }}>
       <CardHeader
         avatar={<Avatar alt={title} src={image} sx={{ width: 70, height: 70, }} />}
         title={title}
