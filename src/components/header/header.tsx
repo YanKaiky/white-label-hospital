@@ -1,8 +1,8 @@
+import { FC, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Box, Button, IconButton, Popover, Typography, useMediaQuery, useTheme } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import logo from '../../assets/logo.png';
-import { FC, useState } from "react";
+import { Logo } from "./logo";
 
 interface IHeaderProps {
   image: string;
@@ -23,8 +23,6 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
   const xsDown = useMediaQuery(theme.breakpoints.down('xs'));
   const xlDown = useMediaQuery(theme.breakpoints.down('xl'));
 
-  console.log(smDown, mdDown, lgDown, xsDown, xlDown);
-
   return (
     <>
       <Box
@@ -37,7 +35,7 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
           width='100%'
           padding={2}
         >
-          <Typography variant="h5" sx={{ color: 'white' }}>
+          <Typography variant="h5" fontSize={(smDown && mdDown && lgDown && xlDown && !xsDown) ? 16 : undefined} sx={{ color: 'white' }}>
             Informações - (47) 3035-9999
           </Typography>
         </Box>
@@ -49,28 +47,7 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
         justifyContent='space-between'
         sx={{ background: '#fff' }}
       >
-        <Box
-          display='flex'
-          justifyContent='flex-start'
-          alignItems='center'
-          width='70%'
-          padding={2}
-          gap={2}
-        >
-          <img
-            src={logo}
-            alt="Instituto Pequena Fênix"
-            height={mdDown ? '75%' : '100%'}
-          />
-
-          <Typography
-            variant="h5"
-            fontSize={(smDown && mdDown && lgDown && xlDown && !xsDown) ? 16 : undefined}
-            sx={{ userSelect: 'none', color: '#002C55' }}
-          >
-            Instituto Pequena Fênix
-          </Typography>
-        </Box>
+        <Logo />
 
         {xlDown && lgDown ?
           <IconButton sx={{ marginRight: 4 }} onClick={(e) => {

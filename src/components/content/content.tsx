@@ -15,7 +15,7 @@ export const Content: FC = () => {
       </Typography>
 
       <Typography textAlign='justify' fontWeight={300} marginTop={5} fontSize={20}>
-        Seguindo os passos de Madre Regina Protmann, trabalhando com dedicação, determinação e disciplina, e guiados sob proteção de Santa Catarina de
+        Seguindo os passos de Eliza Beatriz, trabalhando com dedicação, determinação e disciplina, e guiados sob proteção de Santa Catarina de
         Alexandria e Santa Isabel da Hungria, o Hospital Santa Isabel é uma entidade filantrópica pertencente à Rede Instituto Pequena Fênix
         que atua com a missão de acolher e cuidar do ser humano durante todo o ciclo da vida.
       </Typography>

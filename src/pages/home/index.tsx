@@ -1,12 +1,12 @@
 import { News } from "../../components/news/news";
-import { Content } from "../../components/content/content";
 import { IPFBody } from "../../layouts/IPFBody";
 import headerImage from "../../assets/home.png";
+import { Specialties } from "../../components/specialties/specialties";
 
 export const Home = () => {
   return (
     <IPFBody image={headerImage}>
-      <Content />
+      <Specialties />
 
       <News />
     </IPFBody>

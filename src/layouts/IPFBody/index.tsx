@@ -10,7 +10,7 @@ interface IIPFBodyProps {
 
 export const IPFBody: FC<IIPFBodyProps> = ({ image, children }) => {
   return (
-    <Box sx={{ background: '#FDFFD1' }}>
+    <Box sx={{ background: '#fdfdfd' }}>
       <Header image={image} />
       {children}
       <Footer />
