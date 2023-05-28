@@ -25,7 +25,7 @@ export const News: FC = () => {
           <IPCCard
             image="https://redesantacatarina.org.br/hospital/santaisabel/Imagens/Not%C3%ADcias2/CAPA%20HIPEC.jpg"
             url="https://redesantacatarina.org.br/hospital/santaisabel//SitePages/institucional/noticia-interna.aspx?idnot=139"
-            title="Cirugia robótica"
+            title="Cirurgia robótica"
             subtitle="Hospital Santa Isabel realiza cirurgia de ‘citorredução + HIPEC’, inédita no hospital"
             linkText="Leia mais"
           />
@@ -34,7 +34,7 @@ export const News: FC = () => {
           <IPCCard
             image="https://redesantacatarina.org.br/hospital/santaisabel/Imagens/Not%C3%ADcias2/CAPA%20ANDREW.jpg"
             url="https://redesantacatarina.org.br/hospital/santaisabel//SitePages/institucional/noticia-interna.aspx?idnot=138"
-            title="Cirugia robótica"
+            title="Cirurgia robótica"
             subtitle="Primeira cirurgia robótica no fígado em Santa Catarina é realizado no HSI"
             linkText="Leia mais"
           />
