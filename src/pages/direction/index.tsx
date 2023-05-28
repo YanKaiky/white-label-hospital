@@ -1,7 +1,13 @@
 import { IPFBody } from "../../layouts/IPFBody";
-import headerImage from "../../assets/direction.png";
 import { DirectionPerson } from "../../components/direction.person/direction.person";
 import { Box, List, Typography } from "@mui/material";
+import headerImage from "../../assets/direction.png";
+import carol from "../../assets/carol.jpeg";
+import eliza from "../../assets/eliza.jpeg";
+import ellen from "../../assets/ellen.jpeg";
+import gicelia from "../../assets/gicelia.jpeg";
+import miriam from "../../assets/miriam.jpeg";
+import julie from "../../assets/julie.jpeg";
 
 export const Direction = () => {
   return (
@@ -14,33 +20,45 @@ export const Direction = () => {
 
       <List sx={{ marginBottom: '2rem', marginX: '3rem' }}>
         <DirectionPerson
+          image={carol}
           job="Gerente - Técnica em Enfermagem"
           name="Carolinny Neves Moreira"
-          bgcolor="#00DDA1"
+          url="https://www.instagram.com/carolinnyneves"
         />
 
         <DirectionPerson
-          image="https://pps.whatsapp.net/v/t61.24694-24/341056235_778344066865459_2316432112119543498_n.jpg?ccb=11-4&oh=01_AdQxXSb0hbrS6orrfGVVBnVM00ErZ9ybcdx9cePI3jAV_A&oe=647FF78A"
+          image={eliza}
           job="CEO - Técnica em Enfermagem"
           name="Eliza Beatriz Pires"
+          url="https://www.instagram.com/eliza_beatrizh"
         />
 
         <DirectionPerson
+          image={ellen}
           job="Presidente - Técnica em Enfermagem"
           name="Ellen Franciene Chagas Ribeiro"
-          bgcolor="#FF4600"
+          url="https://www.instagram.com"
         />
 
         <DirectionPerson
-          job="Diretora - Técnica em Enfermagem"
+          image={gicelia}
+          job="Coordenadora - Técnica em Enfermagem"
           name="Gicélia Maria Gonçalves Vieira"
-          bgcolor="#FF00C1"
+          url="https://www.instagram.com/gicelia.goncalves"
         />
 
         <DirectionPerson
+          image={julie}
+          job="Diretora - Técnica em Enfermagem"
+          name="Juliê Costa"
+          url="https://www.instagram.com/julie._.costa"
+        />
+
+        <DirectionPerson
+          image={miriam}
           job="Analista Sênior - Técnica em Enfermagem"
           name="Miriam Prado Guarnieri"
-          bgcolor="#0097FF"
+          url="https://www.instagram.com/mih_guarnieri"
         />
       </List>
     </IPFBody>

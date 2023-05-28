@@ -1,6 +1,8 @@
 import { FC } from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import { CardAvatar } from "../card/card.avatar";
+import child from '../../assets/child.jpeg';
+import jacih from '../../assets/jacih.jpg';
 
 export const Opinions: FC = () => {
   return (
@@ -16,23 +18,23 @@ export const Opinions: FC = () => {
           <CardAvatar
             image="https://towty.com.br/wp-content/uploads/2022/08/Yan_kaiky_8429-530x400.jpg"
             title="Yan Kaiky A. dos Santos"
-            subtitle="O avanço da digitalização e tecnologia otimizaram a jornada dos pacientes que melhoraram sua avaliação dos hospitais"
+            subtitle="Equipe completa e preparada para com a saúde da minha filha. Desde atendimento diário ao psicólogico."
           />
         </Grid>
 
         <Grid item xs={12} sm={6} md={4}>
           <CardAvatar
-            image="https://img.freepik.com/fotos-premium/foto-de-rosto-de-mulher-jovem-latina-feliz-com-fundo-de-expressao-de-sorriso-com-espaco-de-copia-retrato-de-rosto-de-pessoas-reais-etnicas-da-america-do-sul-boliviana_394926-96.jpg"
+            image={jacih}
             title="Jacira Nunes"
-            subtitle="O avanço da digitalização e tecnologia otimizaram a jornada dos pacientes que melhoraram sua avaliação dos hospitais"
+            subtitle="Tive muitos medos com o diagnóstico da minha filha e procurei apoio e conforto tanto para ela quanto para mim. O Ins. Pequena Fênix foi minha melhor escolha."
           />
         </Grid>
 
         <Grid item xs={12} sm={6} md={4}>
           <CardAvatar
-            image="https://static1.minhavida.com.br/articles/64/fe/df/e8/mediabox-pessoas-sempre-insatisfeitas-orig-1.jpg"
-            title="Eduarda de Souza"
-            subtitle="O avanço da digitalização e tecnologia otimizaram a jornada dos pacientes que melhoraram sua avaliação dos hospitais"
+            image={child}
+            title="Lucas Anthony Prado"
+            subtitle="Gosto dos dias de brincadeiras, tivemos até uma montanha russa no quarto! Foi muito legal."
           />
         </Grid>
       </Grid>

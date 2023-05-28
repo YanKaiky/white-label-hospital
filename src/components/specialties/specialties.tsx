@@ -3,7 +3,7 @@ import { SpceialtyCard } from "./specialties.card";
 import { Box, Grid, Typography } from "@mui/material";
 import emergency from '../../assets/emergency.jpg';
 import maternity from '../../assets/maternity.jpg';
-import neurology from '../../assets/neurology.jpg';
+import psicology from '../../assets/psicology.jpg';
 
 export const Specialties: FC = () => {
   return (
@@ -19,21 +19,21 @@ export const Specialties: FC = () => {
           <SpceialtyCard
             image={emergency}
             title="Emergência"
-            url="https://www.instagram.com/p/Cq1KhvnpOia/"
+            url="https://wa.me/554789073776"
           />
         </Grid>
         <Grid item xs={12} sm={4}>
           <SpceialtyCard
             image={maternity}
-            title="Maternidade"
-            url="https://www.instagram.com/p/Cq1KhvnpOia/"
+            title="Pediatria"
+            url="https://wa.me/554789073776"
           />
         </Grid>
         <Grid item xs={12} sm={4}>
           <SpceialtyCard
-            image={neurology}
-            title="Neurologia"
-            url="https://www.instagram.com/p/Cq1KhvnpOia/"
+            image={psicology}
+            title="Psicologia"
+            url="https://wa.me/554789073776"
           />
         </Grid>
       </Grid>

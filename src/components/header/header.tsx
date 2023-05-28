@@ -38,6 +38,10 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
           <Typography variant="h5" fontSize={(smDown && mdDown && lgDown && xlDown && !xsDown) ? 16 : undefined} sx={{ color: 'white' }}>
             Informações - (47) 8907-3776
           </Typography>
+
+          <Typography variant="caption" fontSize={(smDown && mdDown && lgDown && xlDown && !xsDown) ? 12 : 8} sx={{ color: 'white', marginRight: 3 }}>
+            Processo Acadêmico Téc. Enfermagem SENAC Blumenau - uso de imagens ilustrativas
+          </Typography>
         </Box>
       </Box>
 

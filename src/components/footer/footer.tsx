@@ -1,12 +1,13 @@
 import { FC } from "react";
 import { Box, IconButton, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Link } from "react-router-dom";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ods from '../../assets/ods.png';
 import sentinela from '../../assets/sentinela-hsi.png';
-import { Link } from "react-router-dom";
+// import ona from '../../assets/ona.png';
 
 export const Footer: FC = () => {
   const theme = useTheme();
@@ -21,6 +22,7 @@ export const Footer: FC = () => {
           <Box>
             <img src={ods} alt='ODS' width='30%' />
             <img src={sentinela} alt='Rede sentinela' width='55%' />
+            {/* <img src={sentinela} alt='Rede sentinela' width='55%' /> */}
           </Box>
 
           <Box width={smDown ? '50%' : undefined}>
@@ -44,13 +46,13 @@ export const Footer: FC = () => {
               </IconButton>
             </Link>
 
-            <Link to='https://twitter.com/Twitter' target="_blank" rel="noopener noreferrer">
+            <Link to='https://wa.me/554789073776' target="_blank" rel="noopener noreferrer">
               <IconButton sx={{
                 ":hover": {
                   color: '#A900F3'
                 }
               }}>
-                <TwitterIcon sx={{ fontSize: smDown ? 15 : 18 }} />
+                <WhatsAppIcon sx={{ fontSize: smDown ? 15 : 18 }} />
               </IconButton>
             </Link>
 
