@@ -17,13 +17,7 @@ export const Content: FC = () => {
 
       <Typography textAlign='justify' fontWeight={300} marginTop={5} fontSize={20}>
         Seguindo os passos das Fundadoras e da enfermeira <Link to='https://www.instagram.com/julie._.costa/' target="_blank" rel="noopener noreferrer"><Typography component='span' sx={{ color: "blue" }}>Juliê Costa</Typography></Link>,
-        trabalhando com dedicação, determinação e disciplina, e guiados sob proteção de Santa Catarina de
-        Alexandria e Santa Isabel da Hungria, o Hospital Santa Isabel é uma entidade filantrópica pertencente à Rede Instituto Pequena Fênix
-        que atua com a missão de acolher e cuidar do ser humano durante todo o ciclo da vida.
-      </Typography>
-
-      <Typography textAlign='justify' fontWeight={300} marginY={5} fontSize={20}>
-        A instituição atende com especialização na área infanto juvenil, sendo referência nos cuidados paliativos,
+        trabalhando com dedicação, a instituição atende com especialização na área infanto juvenil, sendo referência nos cuidados paliativos,
         contemplando pacientes de Planos de Saúde e Convênios, Particulares e através do Sistema Único de Saúde.
         Num espaço de mais de 28 mil m², a unidade hospitalar conta com o único heliponto da região homologado pela Anac,
         que recebe aeronaves de até 6 toneladas para transporte de pacientes.

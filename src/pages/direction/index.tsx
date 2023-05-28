@@ -3,7 +3,7 @@ import { DirectionPerson } from "../../components/direction.person/direction.per
 import { Box, List, Typography } from "@mui/material";
 import headerImage from "../../assets/direction.png";
 import carol from "../../assets/carol.jpeg";
-import eliza from "../../assets/eliza.jpeg";
+import eliza from "../../assets/eliza.png";
 import ellen from "../../assets/ellen.jpeg";
 import gicelia from "../../assets/gicelia.jpeg";
 import miriam from "../../assets/miriam.jpeg";
@@ -14,7 +14,7 @@ export const Direction = () => {
     <IPFBody image={headerImage}>
       <Box paddingY={6} paddingX={8}>
         <Typography variant="h5" sx={{ color: '#002C55' }}>
-          Técnicas
+          Equipe
         </Typography>
       </Box>
 
@@ -49,7 +49,7 @@ export const Direction = () => {
 
         <DirectionPerson
           image={julie}
-          job="Diretora - Técnica em Enfermagem"
+          job="Diretora - Enfermeira"
           name="Juliê Costa"
           url="https://www.instagram.com/julie._.costa"
         />
