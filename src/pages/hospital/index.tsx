@@ -1,14 +1,11 @@
-import { News } from "../../components/news/news";
 import { Content } from "../../components/content/content";
 import { IPFBody } from "../../layouts/IPFBody";
-import headerImage from "../../assets/home.png";
+import headerImage from "../../assets/hospital.jpg";
 
-export const Home = () => {
+export const Hospital = () => {
   return (
     <IPFBody image={headerImage}>
       <Content />
-
-      <News />
     </IPFBody>
   );
 };
