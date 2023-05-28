@@ -36,7 +36,7 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
           padding={2}
         >
           <Typography variant="h5" fontSize={(smDown && mdDown && lgDown && xlDown && !xsDown) ? 16 : undefined} sx={{ color: 'white' }}>
-            Informações - (47) 3035-9999
+            Informações - (47) 8907-3776
           </Typography>
         </Box>
       </Box>
