@@ -17,7 +17,7 @@ export const IPCCard: FC<IIPCCardProps> = ({ image, url, title, subtitle, linkTe
 
   return (
     <Link to={url} target="_blank" rel="noopener noreferrer">
-      <Card sx={{ width: '100%', bgcolor: '#FDFFD1' }}>
+      <Card sx={{ width: '100%', bgcolor: '#FDFFD1' }} title={title}>
         <CardMedia
           sx={{ height: 140 }}
           image={image}

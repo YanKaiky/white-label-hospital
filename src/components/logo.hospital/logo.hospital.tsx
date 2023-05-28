@@ -19,7 +19,7 @@ export const LogoHospital = () => {
     >
       <img
         src={logo}
-        alt="Instituto Pequena Fênix"
+        alt="Instituto Pequena Fênix - IPF"
         width='20%'
       />
 
@@ -28,7 +28,7 @@ export const LogoHospital = () => {
         fontSize={(smDown && mdDown && lgDown && xlDown && !xsDown) ? 28 : undefined}
         sx={{ userSelect: 'none', color: '#002C55' }}
       >
-        Instituto Pequena Fênix
+        Instituto Pequena Fênix - IPF
       </Typography>
     </Box>
   );
