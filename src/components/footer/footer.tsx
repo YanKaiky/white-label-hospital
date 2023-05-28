@@ -7,7 +7,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ods from '../../assets/ods.png';
 import sentinela from '../../assets/sentinela-hsi.png';
-// import ona from '../../assets/ona.png';
+import ona from '../../assets/ona.png';
 
 export const Footer: FC = () => {
   const theme = useTheme();
@@ -19,13 +19,13 @@ export const Footer: FC = () => {
     <Box bgcolor='#fff' paddingBottom={2}>
       <footer>
         <Box display='flex' justifyContent='center' alignItems='center' paddingY={2}>
-          <Box>
-            <img src={ods} alt='ODS' width='30%' />
-            <img src={sentinela} alt='Rede sentinela' width='55%' />
-            {/* <img src={sentinela} alt='Rede sentinela' width='55%' /> */}
+          <Box width={smDown ? '60%' : undefined}>
+            <img src={ods} alt='Objetivos de Desenvolvimento Sustentável - ODS' width='19%' title='Objetivos de Desenvolvimento Sustentável - ODS' />
+            <img src={sentinela} alt='Rede sentinela' width='36%' title='Rede sentinela' />
+            <img src={ona} alt='Organização Nacional de Acreditação - ONA' width='15%' title='Organização Nacional de Acreditação - ONA' />
           </Box>
 
-          <Box width={smDown ? '50%' : undefined}>
+          <Box width={smDown ? '40%' : undefined} textAlign='end'>
             <Link to='https://www.instagram.com/eliza_beatrizh/' target="_blank" rel="noopener noreferrer">
               <IconButton sx={{
                 ":hover": {

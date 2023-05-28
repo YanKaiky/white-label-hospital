@@ -2,7 +2,7 @@ import { FC } from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import { CardAvatar } from "../card/card.avatar";
 import child from '../../assets/child.jpeg';
-import jacih from '../../assets/jacih.jpg';
+import diana from '../../assets/diana.jpg';
 
 export const Opinions: FC = () => {
   return (
@@ -24,8 +24,8 @@ export const Opinions: FC = () => {
 
         <Grid item xs={12} sm={6} md={4}>
           <CardAvatar
-            image={jacih}
-            title="Jacira Nunes"
+            image={diana}
+            title="Diana Santos"
             subtitle="Tive muitos medos com o diagnóstico da minha filha e procurei apoio e conforto tanto para ela quanto para mim. O Ins. Pequena Fênix foi minha melhor escolha."
           />
         </Grid>
