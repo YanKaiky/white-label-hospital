@@ -116,32 +116,47 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
           </Box>}
       </Box>
 
-      <Box sx={{
-        position: 'relative',
-        textAlign: 'center',
-        paddingY: '10rem',
-        color: '#fff',
-      }}>
-        <Box sx={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
+      <Box
+        sx={{
+          position: 'relative',
+          paddingY: '10rem',
           width: '100%',
           height: '100%',
-          userSelect: 'none'
-        }}>
-          <img
-            src={image}
-            alt="Imagem 1"
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              filter: 'brightness(0.5)',
-            }}
-          />
-        </Box>
+          backgroundImage: `url(${image})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+        }}
+      >
+        <Box
+          sx={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.5)', // Adjust the alpha value to control transparency
+          }}
+        />
+
+        <Typography
+          variant="h5"
+          fontSize={(smDown && mdDown && lgDown && xlDown && !xsDown) ? 55 : 70}
+          textAlign='center'
+          sx={{
+            position: 'relative',
+            zIndex: 1,
+            color: 'white',
+          }}
+        >
+          {
+            location.pathname === '/hospital' ?
+              'O Hospital' : location.pathname === '/direction' ?
+                'Direção' : location.pathname === '/jobs' ?
+                  'Trabalhe conosco' : 'Home'
+          }
+        </Typography>
       </Box>
+
 
       <Popover
         open={open}
