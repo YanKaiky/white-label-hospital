@@ -7,8 +7,8 @@ const AppRoutes = () => {
     <BrowserRouter>
       <Fragment>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/direction" element={<Direction />} />
-          <Route path="/home" element={<Home />} />
           <Route path="/hospital" element={<Hospital />} />
           <Route path="/jobs" element={<Jobs />} />
           <Route path="*" element={<Home />} />

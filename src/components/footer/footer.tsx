@@ -27,7 +27,7 @@ export const Footer: FC = () => {
             <Link to='https://www.instagram.com/eliza_beatrizh/' target="_blank" rel="noopener noreferrer">
               <IconButton sx={{
                 ":hover": {
-                  color: '#FF84D4'
+                  color: '#A900F3'
                 }
               }}>
                 <InstagramIcon sx={{ fontSize: smDown ? 15 : 18 }} />
@@ -37,7 +37,7 @@ export const Footer: FC = () => {
             <Link to='https://www.facebook.com/profile.php?id=100010598268602' target="_blank" rel="noopener noreferrer">
               <IconButton sx={{
                 ":hover": {
-                  color: '#FF84D4'
+                  color: '#A900F3'
                 }
               }}>
                 <FacebookIcon sx={{ fontSize: smDown ? 15 : 18 }} />
@@ -47,7 +47,7 @@ export const Footer: FC = () => {
             <Link to='https://twitter.com/Twitter' target="_blank" rel="noopener noreferrer">
               <IconButton sx={{
                 ":hover": {
-                  color: '#FF84D4'
+                  color: '#A900F3'
                 }
               }}>
                 <TwitterIcon sx={{ fontSize: smDown ? 15 : 18 }} />
@@ -58,7 +58,7 @@ export const Footer: FC = () => {
               <IconButton
                 sx={{
                   ":hover": {
-                    color: '#FF84D4'
+                    color: '#A900F3'
                   }
                 }}>
                 <LinkedInIcon sx={{ fontSize: smDown ? 15 : 18 }} />

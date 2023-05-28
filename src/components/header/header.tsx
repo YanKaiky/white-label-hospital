@@ -64,9 +64,9 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
           >
             <Button
               variant="text"
-              onClick={() => navigate('/home')}
+              onClick={() => navigate('/')}
               sx={{
-                color: location.pathname === '/home' ? '#A900F3' : '#00B65B',
+                color: location.pathname === '/' ? '#A900F3' : '#00B65B',
                 ":hover": {
                   color: '#A900F3'
                 }
@@ -175,9 +175,9 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
         <Box display='flex' flexDirection='column' alignItems='flex-start' bgcolor='#fff'>
           <Button
             variant="text"
-            onClick={() => navigate('/home')}
+            onClick={() => navigate('/')}
             sx={{
-              color: location.pathname === '/home' ? '#A900F3' : '#00B65B',
+              color: location.pathname === '/' ? '#A900F3' : '#00B65B',
               background: '#fff',
               ":hover": {
                 color: '#A900F3'
