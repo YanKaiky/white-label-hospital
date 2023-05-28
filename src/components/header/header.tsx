@@ -26,7 +26,7 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
   return (
     <>
       <Box
-        height='10vh'
+        height='12vh'
         sx={{ background: '#A900F3' }}
       >
         <Box
@@ -35,12 +35,12 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
           width='100%'
           padding={2}
         >
-          <Typography variant="h5" fontSize={(smDown && mdDown && lgDown && xlDown && !xsDown) ? 16 : undefined} sx={{ color: 'white' }}>
+          <Typography variant="h5" fontSize={(smDown && mdDown && lgDown && xlDown && !xsDown) ? 15 : undefined} sx={{ color: 'white' }}>
             Informações - (47) 8907-3776
           </Typography>
 
-          <Typography variant="caption" fontSize={(smDown && mdDown && lgDown && xlDown && !xsDown) ? 12 : 8} sx={{ color: 'white', marginRight: 3 }}>
-            Processo Acadêmico Téc. Enfermagem SENAC Blumenau - uso de imagens ilustrativas
+          <Typography variant="caption" fontSize={(smDown && mdDown && lgDown && xlDown && !xsDown) ? 11 : 9} sx={{ color: 'white', marginRight: 3 }}>
+            Processo Acadêmico Téc. Enfermagem SENAC Blumenau - Uso de Imagens Ilustrativas
           </Typography>
         </Box>
       </Box>
