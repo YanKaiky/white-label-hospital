@@ -157,7 +157,8 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
             location.pathname === '/hospital' ?
               'O Hospital' : location.pathname === '/direction' ?
                 'Direção' : location.pathname === '/jobs' ?
-                  'Trabalhe conosco' : 'Home'
+                  'Trabalhe conosco' : location.pathname === '/cuidados-paliativos' ?
+                    'Cuidados Paliativos' : 'Home'
           }
         </Typography>
       </Box>
