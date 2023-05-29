@@ -28,7 +28,7 @@ export const LogoHospital = () => {
         fontSize={(smDown && mdDown && lgDown && xlDown && !xsDown) ? 28 : undefined}
         sx={{ userSelect: 'none', color: '#002C55' }}
       >
-        Instituto Pequena Fênix - IPF
+        Instituto Pequena Fênix
       </Typography>
     </Box>
   );
