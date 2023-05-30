@@ -26,7 +26,7 @@ export const Header: FC<IHeaderProps> = ({ image }) => {
   return (
     <>
       <Box
-        height='12vh'
+        height='14vh'
         sx={{ background: '#A900F3' }}
       >
         <Box
