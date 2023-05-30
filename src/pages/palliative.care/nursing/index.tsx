@@ -9,12 +9,12 @@ export const Nursing = () => {
         Trata-se de oferecer ao paciente qualidade de vida, enquanto vida houver (Oliveira & Silva, 2010).
       </Typography>
 
-      <Typography textAlign='justify' fontWeight={300} marginTop={5} fontSize={20}>
+      <Typography textAlign='justify' fontWeight={300} marginTop={2} fontSize={20}>
         A enfermagem atua em equipes interdisciplinares, buscando oferecer um cuidado profissional que reduza o sofrimento e
         promova o conforto e a dignidade do paciente e da família, atendendo as necessidades básicas de saúde física, emocional, espiritual e social.
       </Typography>
 
-      <Typography textAlign='justify' fontWeight={300} marginTop={5} fontSize={20}>
+      <Typography textAlign='justify' fontWeight={300} marginTop={2} fontSize={20}>
         A enfermagem têm, nos cuidados paliativos, a qualidade de vida como o principal objetivo, oferecendo meios que garantam mais vidas aos anos, ao invés de anos à vida.
         O profissional de enfermagem responsável por realizar o acompanhamento de um paciente e seus familiares através dos cuidados paliativos não verifica, apenas, os
         sinais vitais desse paciente. A relação construída nesse ambiente vai além do controle da dor e os protocolos médicos. Conversas, visitas frequentes,
