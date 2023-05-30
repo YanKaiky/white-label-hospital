@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { IPFBody } from "../../layouts/IPFBody";
-import nursing from "../../assets/nursing.jpeg";
 import TabContext from '@mui/lab/TabContext';
+import { Box, Container, Tab, Typography } from "@mui/material";
+import nursing from "../../assets/nursing.jpeg";
 import nutrition from "../../assets/nutrition.jpeg";
 import psicology from "../../assets/psicology.jpeg";
 import palliativeMedicine from "../../assets/palliative-medicine.jpeg";
-import { Box, Tab, Typography } from "@mui/material";
 import { TabList, TabPanel } from "@mui/lab";
 import { PalliativeMedicine } from "./palliative.medicine";
 import { Nursing } from "./nursing";
@@ -22,6 +22,8 @@ export const PalliativeCare = () => {
       <TabContext value={tab}>
         <Box sx={{ borderBottom: 1, borderColor: 'divider', bgcolor: '#A900F3' }}>
           <TabList
+            variant="scrollable"
+            scrollButtons={false}
             textColor="inherit"
             sx={{
               '& .MuiTab-textColorInherit': {
@@ -32,7 +34,6 @@ export const PalliativeCare = () => {
               },
               color: 'grey'
             }}
-
             onChange={(_: React.SyntheticEvent, newValue: string) => {
               switch (newValue) {
                 case '1':
@@ -50,50 +51,51 @@ export const PalliativeCare = () => {
               }
 
               setTab(newValue);
-            }}>
-            <Tab label="Enfermagem" value="1" />
-            <Tab sx={{ color: 'grey', fontWeight: 'bold' }} label="Medicina Paliativa" value="2" />
-            <Tab sx={{ color: 'grey', fontWeight: 'bold' }} label="Nutrição" value="3" />
-            <Tab sx={{ color: 'grey', fontWeight: 'bold' }} label="Psicologia" value="4" />
+            }}
+          >
+            <Tab sx={{ fontWeight: 'bold' }} label="Enfermagem" value="1" />
+            <Tab sx={{ fontWeight: 'bold' }} label="Medicina Paliativa" value="2" />
+            <Tab sx={{ fontWeight: 'bold' }} label="Nutrição" value="3" />
+            <Tab sx={{ fontWeight: 'bold' }} label="Psicologia" value="4" />
           </TabList>
         </Box>
-        <Box marginX={10}>
+        <Container>
           <TabPanel value="1"><Nursing /></TabPanel>
           <TabPanel value="2"><PalliativeMedicine /></TabPanel>
           <TabPanel value="3"><Nutrition /></TabPanel>
           <TabPanel value="4"><Psicology /></TabPanel>
-        </Box>
+        </Container>
       </TabContext>
 
-      <Box marginX={14} marginBottom={6}>
-        <Typography textAlign='start' marginTop={10}>
+      <Container>
+        <Typography marginTop={10}>
           Fontes:
         </Typography>
 
         <Link to='http://pepsic.bvsalud.org/scielo.php?script=sci_arttext&pid=S1516-08582011000200007' target="_blank" rel="noopener noreferrer">
-          <Typography textAlign='start' fontWeight={300} color='blue'>
+          <Typography variant="subtitle2" fontWeight={300} color='blue'>
             http://pepsic.bvsalud.org/scielo.php?script=sci_arttext&pid=S1516-08582011000200007
           </Typography>
         </Link>
 
         <Link to='https://nutritotal.com.br/pro/cuidados-paliativos-qual-o-papel-da-nutricao/amp/' target="_blank" rel="noopener noreferrer">
-          <Typography textAlign='start' fontWeight={300} color='blue'>
+          <Typography variant="subtitle2" fontWeight={300} color='blue'>
             https://nutritotal.com.br/pro/cuidados-paliativos-qual-o-papel-da-nutricao/amp/
           </Typography>
         </Link>
 
         <Link to='https://paliativo.org.br/cuidados-paliativos/o-que-sao#' target="_blank" rel="noopener noreferrer">
-          <Typography textAlign='start' fontWeight={300} color='blue'>
+          <Typography variant="subtitle2" fontWeight={300} color='blue'>
             https://paliativo.org.br/cuidados-paliativos/o-que-sao#
           </Typography>
         </Link>
 
         <Link to='https://blog.unis.edu.br/conheca-o-papel-da-enfermagem-nos-cuidados-paliativos?hs_amp=true' target="_blank" rel="noopener noreferrer">
-          <Typography textAlign='start' fontWeight={300} color='blue'>
+          <Typography variant="subtitle2" fontWeight={300} color='blue' marginBottom={8}>
             https://blog.unis.edu.br/conheca-o-papel-da-enfermagem-nos-cuidados-paliativos?hs_amp=true
           </Typography>
         </Link>
-      </Box>
+      </Container>
     </IPFBody>
   );
 };
