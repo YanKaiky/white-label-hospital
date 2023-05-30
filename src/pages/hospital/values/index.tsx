@@ -3,7 +3,7 @@ import { Collapse, ListItemButton, ListItemText, Typography } from "@mui/materia
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
 
 export const Values: FC = () => {
-  const [open, setOpen] = useState<boolean>(false);
+  const [open, setOpen] = useState<boolean>(true);
 
   return (
     <>
@@ -14,7 +14,7 @@ export const Values: FC = () => {
           ":hover": {
             bgcolor: '#A900F3'
           },
-          borderRadius: ' 0 0 8px 8px'
+          borderRadius: !open ? '0 0 8px 8px' : undefined
         }}
       >
         <ListItemText primary="Valores" primaryTypographyProps={{ style: { color: 'white' } }} />
@@ -34,7 +34,7 @@ export const Values: FC = () => {
         }}
       >
         <Typography textAlign='justify' fontWeight={300} fontSize={20}>
-          Proporcionar qualidade, humização e respeito ao paciente e familiares, com objetivo de criar vidas aos anos.
+          Respeito, Inovação, Empatia e Humanização.
         </Typography>
       </Collapse>
     </>

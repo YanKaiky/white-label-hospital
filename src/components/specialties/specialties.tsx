@@ -19,28 +19,28 @@ export const Specialties: FC = () => {
       </Box>
 
       <Grid container>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={6} md={6} lg={3}>
           <SpceialtyCard
             image={heart}
             title="Cuidados Paliativos"
             onClick={() => navigate('/cuidados-paliativos')}
           />
         </Grid>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={6} md={6} lg={3}>
           <SpceialtyCard
             image={emergency}
             title="Emergência"
             url="https://wa.me/554789073776"
           />
         </Grid>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={6} md={6} lg={3}>
           <SpceialtyCard
             image={maternity}
             title="Pediatria"
             url="https://wa.me/554789073776"
           />
         </Grid>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={6} md={6} lg={3}>
           <SpceialtyCard
             image={psicology}
             title="Psicologia"

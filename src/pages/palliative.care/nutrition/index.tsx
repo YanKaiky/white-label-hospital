@@ -10,7 +10,7 @@ export const Nutrition = () => {
         ajustado a cada realidade.
       </Typography>
 
-      <Typography textAlign='justify' variant="subtitle1" marginTop={2} fontSize={20}>
+      <Typography textAlign='justify' fontWeight={300} marginTop={2} fontSize={20}>
         A nutrição em cuidados paliativos tem como objetivos:
       </Typography>
 

@@ -3,7 +3,7 @@ import { Collapse, ListItemButton, ListItemText, Typography } from "@mui/materia
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
 
 export const Vision: FC = () => {
-  const [open, setOpen] = useState<boolean>(false);
+  const [open, setOpen] = useState<boolean>(true);
 
   return (
     <>

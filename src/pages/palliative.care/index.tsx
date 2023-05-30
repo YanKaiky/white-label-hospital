@@ -54,7 +54,7 @@ export const PalliativeCare = () => {
             }}
           >
             <Tab sx={{ fontWeight: 'bold' }} label="Enfermagem" value="1" />
-            <Tab sx={{ fontWeight: 'bold' }} label="Medicina Paliativa" value="2" />
+            <Tab sx={{ fontWeight: 'bold' }} label="Medicina" value="2" />
             <Tab sx={{ fontWeight: 'bold' }} label="Nutrição" value="3" />
             <Tab sx={{ fontWeight: 'bold' }} label="Psicologia" value="4" />
           </TabList>
