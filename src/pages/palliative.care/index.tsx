@@ -6,7 +6,7 @@ import nursing from "../../assets/nursing.jpeg";
 import nutrition from "../../assets/nutrition.jpeg";
 import psicology from "../../assets/psicology.jpeg";
 import palliativeMedicine from "../../assets/palliative-medicine.jpeg";
-import { TabList, TabPanel } from "@mui/lab";
+import { TabList } from "@mui/lab";
 import { PalliativeMedicine } from "./palliative.medicine";
 import { Nursing } from "./nursing";
 import { Nutrition } from "./nutrition";
@@ -60,10 +60,13 @@ export const PalliativeCare = () => {
           </TabList>
         </Box>
         <Container>
-          <TabPanel value="1"><Nursing /></TabPanel>
-          <TabPanel value="2"><PalliativeMedicine /></TabPanel>
-          <TabPanel value="3"><Nutrition /></TabPanel>
-          <TabPanel value="4"><Psicology /></TabPanel>
+          {tab === '1' ? <Nursing /> :
+            tab === '2' ?
+              <PalliativeMedicine /> :
+              tab === '3' ?
+                <Nutrition /> :
+                <Psicology />
+          }
         </Container>
       </TabContext>
 
