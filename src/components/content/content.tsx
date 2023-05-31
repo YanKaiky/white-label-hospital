@@ -11,7 +11,7 @@ export const Content: FC = () => {
         Com um modelo de gestão em que o superávit gerado é aplicado em nossas obras a fim de executar dignamente nossas atividades,
         a instituição acolhe e cuida do ser humano em todo o ciclo da vida. Ao todo são cerca de 4 mil colaboradores distribuídos
         em diversas instituições de saúde, mantendo inúmeros estabelecimentos de ensino e acolhendo crianças e seus tutores em espaços assistenciais,
-        com atendimento humanizado e serviços de qualidade para milhares de pessoas em sete
+        com atendimento humanizado e serviços de qualidade para milhares de pessoas em três
         Estados brasileiros (Maranhão, Santa Catarina e São Paulo).
       </Typography>
 
