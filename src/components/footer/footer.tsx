@@ -56,7 +56,7 @@ export const Footer: FC = () => {
               </IconButton>
             </Link>
 
-            <Link to='https://www.linkedin.com/in/yankaiky/' target="_blank" rel="noopener noreferrer">
+            <Link to='https://www.linkedin.com/in/elizabeatriz' target="_blank" rel="noopener noreferrer">
               <IconButton
                 sx={{
                   ":hover": {
