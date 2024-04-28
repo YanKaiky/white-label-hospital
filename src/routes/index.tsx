@@ -12,7 +12,7 @@ const AppRoutes = () => {
           <Route path="/direction" element={<Direction />} />
           <Route path="/hospital" element={<Hospital />} />
           <Route path="/jobs" element={<Jobs />} />
-          <Route path="/cuidados-paliativos" element={<PalliativeCare />} />
+          <Route path="/palliative-care" element={<PalliativeCare />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </Fragment>

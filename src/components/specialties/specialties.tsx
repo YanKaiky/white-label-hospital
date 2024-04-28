@@ -23,7 +23,7 @@ export const Specialties: FC = () => {
           <SpceialtyCard
             image={heart}
             title="Cuidados Paliativos"
-            onClick={() => navigate('/cuidados-paliativos')}
+            onClick={() => navigate('/palliative-care')}
           />
         </Grid>
         <Grid item xs={12} sm={6} md={6} lg={3}>
